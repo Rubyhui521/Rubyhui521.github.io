@@ -83,6 +83,10 @@ input[type="submit"] {
     color: #333131;
 }
 
+input[type="text"],
+input[type="submit"] {
+    width: 90%;
+}
 
 /* the first form */
 .apply {
@@ -267,6 +271,7 @@ footer {
 @media (min-width: 768px) {
     section div.background {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
         background-image: url("images/bg-image/scooter.svg");

@@ -73,6 +73,11 @@ input {
     color: #9B9B9B;
 }
 
+input[type="text"],
+input[type="submit"] {
+    width: 90%;
+}
+
 input[type="submit"] {
     background-color: #57EEAB;
     padding-top: 13px;
@@ -82,7 +87,6 @@ input[type="submit"] {
     font-weight: bold;
     color: #333131;
 }
-
 
 /* the first form */
 .apply {

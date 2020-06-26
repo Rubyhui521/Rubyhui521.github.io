@@ -83,10 +83,6 @@ input[type="submit"] {
     color: #333131;
 }
 
-input[type="text"],
-input[type="submit"] {
-    width: 90%;
-}
 
 /* the first form */
 .apply {

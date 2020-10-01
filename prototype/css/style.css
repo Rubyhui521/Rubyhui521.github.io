@@ -205,32 +205,38 @@ footer .copyright {
 }
 
 /* product page */
-div.new h2 {
+div.product.new h2 {
     margin: auto;
     padding: 20px;
 
     color: #4F3918;
 }
 
-div.hot h2 {
+div.product.hot h2 {
     margin: auto;
     padding: 20px;
 
     color: #014E9E;
 }
 
-div.new figure,
-div.hot figure {
+div.product.new figure,
+div.product.hot figure {
     display: flex;
 
     color: #8C8C8C;
 }
 
-div.new img,
-div.hot img {
+div.product.new img,
+div.product.hot img {
     width: 50%;
     padding: 0 20px;
 }
+
+div.overlayproduct,
+div.gallery1 {
+    display: none;
+}
+
 @media (min-width: 500px) {
     h1 {
         font-size: 2rem;
@@ -342,6 +348,99 @@ div.hot img {
 }
 
 /* product page */
+div.product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+}
+
+div.product h2{
+    background-color: white;
+
+    /* center h2 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+div.product.new img,
+div.product.hot img {
+    width: 100%;
+}
+
+div.product p {
+    display: none;
+}
+
+div.gallery1 {
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+} 
+
+div.gallery1 img{
+    width: 100%;
+    height: auto;
+}
+
+/* creat color block */
+div.overlayproduct {
+    display: block;
+    position: relative;
+}
+
+div.overlaycolor {
+    position: absolute;
+    background-color: #85734A;
+    opacity: 100%;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    top: 0;
+    left: 0;
+}
+
+div.overlaycolor.brown2 {
+    background-color: #AC6D18;
+}
+
+div.overlaycolor.blue1 {
+    background-color: #006FBE;
+}
+
+div.overlaycolor.blue2 {
+    background-color: #014EBC;
+}
+
+div.product.new picture:nth-child(1),
+div.product.hot picture:nth-child(1) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+div.product.new picture:nth-child(2),
+div.product.hot picture:nth-child(2) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+div.product.new .overlayproduct:nth-child(1),
+div.product.hot .overlayproduct:nth-child(1) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+div.product.new .overlayproduct:nth-child(2),
+div.product.hot .overlayproduct:nth-child(2) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
 
 @media (min-width: 768px) {
     h1 {

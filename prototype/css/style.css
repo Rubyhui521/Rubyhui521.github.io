@@ -204,6 +204,33 @@ footer .copyright {
     font-weight: bold;
 }
 
+/* product page */
+div.new h2 {
+    margin: auto;
+    padding: 20px;
+
+    color: #4F3918;
+}
+
+div.hot h2 {
+    margin: auto;
+    padding: 20px;
+
+    color: #014E9E;
+}
+
+div.new figure,
+div.hot figure {
+    display: flex;
+
+    color: #8C8C8C;
+}
+
+div.new img,
+div.hot img {
+    width: 50%;
+    padding: 0 20px;
+}
 @media (min-width: 500px) {
     h1 {
         font-size: 2rem;
@@ -313,6 +340,8 @@ footer .copyright {
         grid-row: 5/6;
     }
 }
+
+/* product page */
 
 @media (min-width: 768px) {
     h1 {
@@ -448,4 +477,7 @@ footer .copyright {
         justify-content: space-between;
         margin-left: 20px;
     }
+
+    /* product page */
+
 }

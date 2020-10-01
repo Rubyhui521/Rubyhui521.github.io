@@ -58,7 +58,7 @@ header ul li {
 }
 
 header ul:nth-child(1) li {
-    display: none;
+    display: inline;
 }
 
 /* to create the overlay effect */
@@ -331,10 +331,6 @@ footer .copyright {
         font-size: 1.25rem;
     }
 
-    header ul:nth-child(1) li {
-        display: inline;
-    }
-
     /* change the layout */
     .latestproduct div {
         flex-direction: row;
@@ -411,7 +407,7 @@ footer .copyright {
     }
 
     footer .nav {
-        grid-column: 1/4;
+        grid-column: 1/3;
         grid-row: 3/4;
 
         display: flex;

@@ -353,7 +353,6 @@ p.gallery1 {
 div.product {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
 
     position: relative;
     width: 90%;
@@ -585,6 +584,15 @@ div.product.hot .colorblock:nth-child(2) {
         display: none;
     }
 
+    p.gallery1 {
+        display: block;
+        box-sizing: border-box;
+        width: 80%;
+        margin: 40px auto 20px;
+
+        text-align: center;
+        color: #8C8C8C;
+    }
 
     div.subgallery {
         display: flex;

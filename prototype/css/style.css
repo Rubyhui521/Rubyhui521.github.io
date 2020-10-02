@@ -219,10 +219,10 @@ div.product.hot h2 {
     color: #014E9E;
 }
 
-div.product.new figure,
-div.product.hot figure {
+div.product.new picture,
+div.product.hot picture {
     display: flex;
-
+    flex-direction: ;
     color: #8C8C8C;
 }
 
@@ -232,8 +232,10 @@ div.product.hot img {
     padding: 0 20px;
 }
 
-div.overlayproduct,
-div.gallery1 {
+div.colorblock,
+div.maingallery,
+div.gallery1 img,
+p.gallery1 {
     display: none;
 }
 
@@ -385,17 +387,18 @@ div.gallery1 {
 } 
 
 div.gallery1 img{
+    display: block;
     width: 100%;
     height: auto;
 }
 
 /* creat color block */
-div.overlayproduct {
+div.colorblock {
     display: block;
     position: relative;
 }
 
-div.overlaycolor {
+div.color {
     position: absolute;
     background-color: #85734A;
     opacity: 100%;
@@ -406,38 +409,38 @@ div.overlaycolor {
     left: 0;
 }
 
-div.overlaycolor.brown2 {
+div.color.brown2 {
     background-color: #AC6D18;
 }
 
-div.overlaycolor.blue1 {
+div.color.blue1 {
     background-color: #006FBE;
 }
 
-div.overlaycolor.blue2 {
+div.color.blue2 {
     background-color: #014EBC;
 }
 
-div.product.new picture:nth-child(1),
-div.product.hot picture:nth-child(1) {
+div.product.new img:nth-child(1),
+div.product.hot img:nth-child(1) {
     grid-column: 1/2;
     grid-row: 1/2;
 }
 
-div.product.new picture:nth-child(2),
-div.product.hot picture:nth-child(2) {
+div.product.new img:nth-child(2),
+div.product.hot img:nth-child(2) {
     grid-column: 2/3;
     grid-row: 2/3;
 }
 
-div.product.new .overlayproduct:nth-child(1),
-div.product.hot .overlayproduct:nth-child(1) {
+div.product.new .colorblock:nth-child(1),
+div.product.hot .colorblock:nth-child(1) {
     grid-column: 2/3;
     grid-row: 1/2;
 }
 
-div.product.new .overlayproduct:nth-child(2),
-div.product.hot .overlayproduct:nth-child(2) {
+div.product.new .colorblock:nth-child(2),
+div.product.hot .colorblock:nth-child(2) {
     grid-column: 1/2;
     grid-row: 2/3;
 }
@@ -578,5 +581,20 @@ div.product.hot .overlayproduct:nth-child(2) {
     }
 
     /* product page */
+    div.gallery1 {
+        display: none;
+    }
 
+
+    div.subgallery {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    div.product {
+        width: 45%;
+    }
 }

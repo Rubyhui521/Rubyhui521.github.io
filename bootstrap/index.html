@@ -8,43 +8,53 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Bootstrap This</title>
   </head>
   <body>
-    <nav>
-        <ul>
-            <li><a href="#">Bootstrap</a></li>
-            <li><a href="#"></a>GET TO KNOW</a></li>
-            <li><a href="#"></a>GET TO START</a></li>
-        </ul>
-    </nav>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="nav-link disabled navbar-brand">Bootstrap</a>
+        <button class="navbar-toggler"
+                data-toggle="collapse"
+                data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarNav" class="collapse navbar-collapse">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link" href="#">GET TO KNOW</a>
+            <a class="nav-link" href="#">GET TO START</a>
+          </div>
+        </div>
+      </nav>
 
-    <div>
-      <p>Tired of writing the same code again and again? </p>
-      <p>Need to show your boss with a prototype very soon?</p>
-      <p>Want to save your time and be more efficient on coding? </p>
+    <div class="bg-white text-center mt-5 mb-5">
+      <img src="image/bootstrap-solid.svg" alt="logo" class="w-50 mt-5">
+      <h1 class="display-2 text-center mt-5">Bootstrap</h1>
+      <P class="text-muted text-center">• Streamliner • Time Saver •</P>
     </div>
 
-    <header>
-      <h1>Bootstrap</h1>
-      <P>•Streamliner•Time Saver•</P>
-    </header>
-
-    <div>
-      <h2>GET TO KNOW</h2>
-      <h3>Overview</h3>
-      <p>Bootstrap is the most popular framework made to build new projects - responsive, mobile-first websites. This framework is open source.</p>
-      <p>What’ more, Bootstrap is completely free to download and use.</p>
-      <h3>Grid System</h3>
-      <p>Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive.</p>
-      <h3>Components</h3>
-      <p>Bootsrap has an extensive collection of components, for instance, navs, buttons, collapse and so on. They are already styled in advance.</p>
+    <div class="ml-3 m-md-5">
+      <h2 class="mb-3">GET TO KNOW</h2>
+      <div>
+        <div>
+          <h3>Overview</h3>
+          <p>Bootstrap is the most popular framework made to build new projects - responsive, mobile-first websites. This framework is open source.</p>
+          <p>What’ more, Bootstrap is completely free to download and use.</p>
+        </div>
+        <div>
+          <h3>Grid System</h3>
+          <p>Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive.</p>
+        </div>
+        <div>
+          <h3>Components</h3>
+          <p>Bootsrap has an extensive collection of components, for instance, navs, buttons, collapse and so on. They are already styled in advance.</p>
+        </div>
+      </div>
     </div>
 
-    <div>
-      <h2>GET TO START</h2>
+    <div class="ml-3 mr-3 m-md-5">
+      <h2 class="mb-3">GET TO START</h2>
       <P><span>B</span>ootstrap is very powerful and straight forward. By simply adding corresponding classes onto your html file you can easily take advantages from responsive grid system, extensive prebuilt components and powerful plugins built on jQuery that are provided by Bootstrap.</P>
-      <p><span>T</span>wo most common ways to include Bootstrap in your project: You can either download the <span>documents</span> or do it through the <span>Content Delivery Network (CDN)</span>. Using BootstrapCDN can help you to add Bootstrap quickly. </p>
+      <p><span>T</span>wo most common ways to include Bootstrap in your project: You can either download the <strong>documents</strong> or do it through the <strong>Content Delivery Network (CDN)</strong>. Using BootstrapCDN can help you to add Bootstrap quickly. </p>
     </div>
 
 

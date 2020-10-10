@@ -148,7 +148,11 @@ header h1 {
 }
 
 /* p only shows up in desktop view */
-header p {
+header p，
+div.brown1,
+div.brown2,
+div.blue1,
+div.blue2 {
     display: none;
 }
 

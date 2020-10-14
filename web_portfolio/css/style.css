@@ -77,7 +77,7 @@ blockquote {
     color: #004742;
 }
 
-div.web {
+div.web, div.ui {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

@@ -2,11 +2,40 @@ nav {
     background-color: #004742;
 }
 
+footer {
+    background-color: #004742;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    color: white;
+    text-align: center;
+}
+
+footer a.top {
+    background-color: rgba(230, 234, 239, 0.5);
+	width: 20px;
+	height: 20px;
+    border-radius: 50%;
+    position: fixed;
+	right: 30px;
+    bottom: 30px;
+
+    color: #004742;
+    font-weight: bolder;
+    text-align: center;
+}
+
 div.banner {
     background-color: #004742;
     position: relative;
 }
 
+footer a.top:hover {
+    background-color: rgba(230, 234, 239, 1);
+    transition: 0.5s 0.1s;
+}
+
+/* home */
 div.banner img {
     display: block;
     width: 100%;
@@ -36,3 +65,44 @@ div.overlay-text {
 div.container-about {
     color: #004742;
 }
+
+div.container-about .about {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* developer */
+blockquote {
+    color: #004742;
+}
+
+div.web {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.buttons {
+    width: 40%;
+    margin: auto;
+}
+
+button {
+    background-color: #869E8F;
+    border-color: #869E8F;
+    border-radius: 7px;
+    border-style: none;
+}
+
+button a:link, button a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+button a:hover, button a:active {
+    color: #004742;
+    background-color: transparent;
+    text-decoration: none;
+  }

@@ -72,19 +72,23 @@ div.container-about .about {
     margin-right: auto;
 }
 
-/* developer */
+/* developer and design*/
 blockquote {
     color: #004742;
 }
 
-div.web {
+div.web, div.ui {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
 
+div.web img, div.ui img{
+    width: 100%;
+}
+
 div.buttons {
-    width: 40%;
+    width: 80%;
     margin: auto;
 }
 
@@ -105,12 +109,8 @@ button a:hover, button a:active {
     color: #004742;
     background-color: transparent;
     text-decoration: none;
-  }
-
-/* designer */
-div.ui {
-    
 }
+
 
 /* photographer */
 div.photo {
@@ -129,6 +129,22 @@ div#carouselExampleIndicators {
 }
 
 @media (min-width: 500px) {
+    /* developer and design*/
+    div.web, div.ui {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    div.web img, div.ui img{
+        width: 50%;
+    }
+
+    div.buttons {
+        width: 40%;
+        margin: auto;
+    }
+
     /* photographer */
     div.photo {
         display: grid;
@@ -143,7 +159,6 @@ div#carouselExampleIndicators {
 }
 
 @media (min-width: 768px) {
-
     /* photographer */
     div.photo {
         display: none;

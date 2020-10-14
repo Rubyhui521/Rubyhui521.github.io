@@ -32,3 +32,7 @@ div.overlay-text {
     transform: translate(-50%, -50%);
     z-index: 999;
 }
+
+div.container-about {
+    color: #004742;
+}

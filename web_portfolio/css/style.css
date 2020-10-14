@@ -1,4 +1,34 @@
 nav {
     background-color: #004742;
-    color: white;
+}
+
+div.banner {
+    background-color: #004742;
+    position: relative;
+}
+
+div.banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+div.overlay {
+    position: absolute;
+    background-color: #004641;
+    opacity: 45%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+div.overlay-text {
+    width: 100%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
 }

@@ -1,5 +1,12 @@
+/* common set */
 nav {
     background-color: #004742;
+}
+
+/* create animation */
+nav a:hover {
+    transform: scale(1.3);
+    transition: 0.3s;
 }
 
 footer {
@@ -11,6 +18,7 @@ footer {
     text-align: center;
 }
 
+/* sticky back-to-top arrow */
 footer a.top {
     background-color: rgba(230, 234, 239, 0.5);
 	width: 20px;
@@ -25,10 +33,7 @@ footer a.top {
     text-align: center;
 }
 
-div.banner {
-    background-color: #004742;
-    position: relative;
-}
+
 
 footer a.top:hover {
     background-color: rgba(230, 234, 239, 1);
@@ -36,6 +41,11 @@ footer a.top:hover {
 }
 
 /* home */
+/* overlay effect */
+div.banner {
+    position: relative;
+}
+
 div.banner img {
     display: block;
     width: 100%;
@@ -62,6 +72,7 @@ div.overlay-text {
     z-index: 999;
 }
 
+/* layout needs to be changed at breakpoints */
 div.container-about {
     color: #004742;
 }
@@ -73,10 +84,13 @@ div.container-about .about {
 }
 
 /* developer and design*/
+
+/* bootstrap controls the color of the paragraph */
 blockquote {
     color: #004742;
 }
 
+/* same layout at these two pages */
 div.web, div.ui {
     display: flex;
     flex-direction: column;
@@ -99,6 +113,7 @@ button {
     border-style: none;
 }
 
+/* change the before and after appearance */
 button a:link, button a:visited {
     color: white;
     background-color: transparent;
@@ -110,7 +125,6 @@ button a:hover, button a:active {
     background-color: transparent;
     text-decoration: none;
 }
-
 
 /* photographer */
 div.photo {
@@ -124,6 +138,7 @@ div.photo img {
     margin: 0 auto 20px auto;
 }
 
+/* it is a bootstrap id */
 div#carouselExampleIndicators {
     display: none;
 }
@@ -162,10 +177,17 @@ input {
 	padding: 5px;
 	border-style: none;
 
+    /* the color of the text that is inout */
 	color: #004742;
 }
 
 @media (min-width: 500px) {
+    /* home */
+    div.container-about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     /* developer and design*/
     div.web, div.ui {
         display: flex;
@@ -196,6 +218,13 @@ input {
 }
 
 @media (min-width: 768px) {
+    /* home */
+    div.container-about {
+        display: flex;
+        /* flex-direction: row is by default */
+        /* justify-content: space-between is by default; */
+    }
+
     /* photographer */
     div.photo {
         display: none;
